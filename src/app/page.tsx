@@ -137,8 +137,8 @@ const App: React.FC = () => {
               <h3>{day.date}</h3>
               <p className={styles.weatherDesc}>{day.dayweather}</p>
               <div className={styles.tempContainer}>
-                <span className={styles.tempMax}>{day.daytemp_float}°C</span>
-                <span className={styles.tempMin}>{day.nighttemp_float}°C</span>
+                <span className={styles.tempMax}>最高温度：{day.daytemp_float}°C</span>
+                <span className={styles.tempMin}>最低温度：{day.nighttemp_float}°C</span>
               </div>
             </div>
           ))}

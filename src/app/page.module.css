@@ -1,11 +1,4 @@
 /* App.css */
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f7fa;
-  color: #333;
-}
 
 .app {
   max-width: 1000px;
@@ -91,10 +84,12 @@ body {
 }
 
 .tempContainer {
+  width: 220px;
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-top: 10px;
+  flex-direction: column;
 }
 
 .tempMax {
