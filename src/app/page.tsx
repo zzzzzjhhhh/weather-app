@@ -1,9 +1,10 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styles from './page.module.css';
 import { CitySelector } from '@/components/CitySelector/CitySelector';
 import { useQueryWeather } from '@/hooks/useQueryWeather';
 import { cityOptions } from './constant';
+import { CityOption } from './types';
 
 const WeatherApp: React.FC = () => {
   const [selectedCity, setSelectedCity] = useState<CityOption>(cityOptions[0]);

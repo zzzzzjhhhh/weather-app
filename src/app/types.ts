@@ -1,4 +1,4 @@
-interface WeatherAPIResponse {
+export interface WeatherAPIResponse {
   status: string;
   count: string;
   info: string;
@@ -6,7 +6,7 @@ interface WeatherAPIResponse {
   forecasts?: WeatherForecastResponse[];
 }
 
-interface DailyForecast {
+export interface DailyForecast {
   date: string;
   week: string;
   dayweather: string;
@@ -21,7 +21,7 @@ interface DailyForecast {
   nighttemp_float: string;
 }
 
-interface WeatherForecastResponse {
+export interface WeatherForecastResponse {
   city: string;
   adcode: string;
   province: string;
@@ -29,7 +29,7 @@ interface WeatherForecastResponse {
   casts: DailyForecast[];
 }
 
-interface CityOption {
+export interface CityOption {
   key: string;
   value: string;
 }
