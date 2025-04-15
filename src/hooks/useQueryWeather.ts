@@ -1,4 +1,5 @@
 import { fetchWeather } from '@/api/weather';
+import { CityOption, DailyForecast } from '@/app/types';
 import { useEffect, useState } from 'react';
 
 export const useQueryWeather = (city: CityOption) => {
