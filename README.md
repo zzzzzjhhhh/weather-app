@@ -1,6 +1,8 @@
 一个基于简单的天气查询app, 支持切换城市
-![Alt text](image.png)
-访问地址：[点击访问](https://vercel.com/zzzzzjhhhhs-projects/weather-app/8jJDvmgxVRS737XrnRvP6f1aAv5J)
+
+![截图](/screenshots/example.png?raw=true)
+
+访问地址：[点击访问](https://weather-ildjcjzp4-zzzzzjhhhhs-projects.vercel.app/)
 
 
 ## Getting Started
