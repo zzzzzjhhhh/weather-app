@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './citySelector.module.css';
+import { CityOption } from '@/app/types';
 
 interface CitySelector {
   cityOptions: CityOption[];
