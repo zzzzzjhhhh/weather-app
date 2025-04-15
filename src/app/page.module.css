@@ -4,9 +4,14 @@
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
+  width: 500px;
   text-align: center;
   margin-bottom: 30px;
   padding: 20px;
