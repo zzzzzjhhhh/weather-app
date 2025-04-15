@@ -1,3 +1,5 @@
+import { CityOption } from './types';
+
 export const cityOptions: CityOption[] = [
     {
       key: '北京',
