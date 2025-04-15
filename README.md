@@ -2,7 +2,7 @@
 
 ![截图](/screenshots/image.png?raw=true)
 
-访问地址：[点击访问](https://weather-ildjcjzp4-zzzzzjhhhhs-projects.vercel.app/)
+访问地址：[点击访问](https://weather-app-rho-two-70.vercel.app/)
 
 
 ## Getting Started
