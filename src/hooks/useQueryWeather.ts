@@ -1,3 +1,4 @@
+import { fetchWeather } from '@/api/weather';
 import { useEffect, useState } from 'react';
 
 export const useQueryWeather = (city: CityOption) => {
@@ -10,18 +11,11 @@ export const useQueryWeather = (city: CityOption) => {
     setError(null);
 
     try {
-      const response = await fetch(
-        `https://restapi.amap.com/v3/weather/weatherInfo?city=${selectedCity.value}&key=${process.env.NEXT_PUBLIC_WEATHER_API_KEY}&extensions=all`
-      );
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-
-      const data: WeatherAPIResponse = await response.json();
-      if (!data.forecasts?.[0]?.casts) {
+      const responseData = await fetchWeather({city: selectedCity.key})
+      if (!responseData.forecasts?.[0]?.casts) {
         return;
       }
-      setForecasts(data.forecasts?.[0]?.casts);
+      setForecasts(responseData.forecasts?.[0]?.casts);
     } catch (err) {
       setError('无法获取天气数据，请检查城市名称或稍后再试');
       console.error('Error fetching weather data:', err);
